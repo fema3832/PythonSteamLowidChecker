@@ -13,7 +13,6 @@ def id(chars = string.ascii_lowercase + string.digits):
 	return ''.join(random.choice(chars) for _ in range(random.choice([3, 4])))
 
 def logid(path, current):
-    assert os.path.isfile(path)
     with open(path, "a") as f:
             f.write(f"avaliable: https://steamcommunity.com/id/{current}\n")
 
